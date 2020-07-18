@@ -1,0 +1,37 @@
+doctype html
+html
+    include ../blocks/head.pug
+    body
+        div(class='container')
+            include ../blocks/header.pug
+            div(class='col-photo')
+                h2 Фото
+                img(src="assets/img/profile-photo.jpg", alt="")
+            div(class='col-about')
+                h2 Немного о себе
+                p Мне 25&nbsp;лет. Хочу стань успешным фронтенд-разработчиком, и, возможно, создать приложение, которое будет помогать людям. Я&nbsp;ценю в&nbsp;людях чувство юмора и&nbsp;упорство, а&nbsp;недолюбливаю лицемерие. В&nbsp;себе&nbsp;же ценю самокритичность, и&nbsp;стараюсь избавиться от&nbsp;нерешительности. Читаю в&nbsp;основном зарубежную классику, антиутопии и&nbsp;научную фантастику. Слушаю трип-хоп, пост-рок, джаз и&nbsp;иногда классику. Смотрю Тарантино, Вильнёва, Финчера и&nbsp;Шазелла. От&nbsp;жизни я&nbsp;хочу постоянного развития, общения с&nbsp;интересными людьми, путешествий и&nbsp;финансового благополучия. 
+            div(class='col-interests')
+                h2 Что я люблю
+                h3 Музыка
+                div(class='music-slider')
+                    img(name="musicSlide", alt="", width="200", height="200")
+                    div(class='controls')
+                        button(class='prevBtn', onclick='prevSlide1()')
+                        button(class='nextBtn', onclick='nextSlide1()')
+                h4 Ссылки:
+                div(class='links')
+                    a(href="https://www.last.fm/ru/music/Massive+Attack/Mezzanine") 1 Massive Attack - Mezzanine
+                    a(href="https://www.last.fm/ru/music/Tame+Impala/Currents") 2 Tame Impala - Currents
+                    a(href="https://www.last.fm/ru/music/The+Black+Keys/El+Camino") 3 The Black Keys - El Camino
+                h3 Фильмы
+                div(class='movie-slider')
+                    img(name="movieSlide", alt="", width="200", height="300")
+                    div(class='controls')
+                        button(class='prevBtn', onclick='prevSlide2()')
+                        button(class='nextBtn', onclick='nextSlide2()')
+                h4 Ссылки:
+                div(class='links')
+                    a(href="https://www.kinopoisk.ru/film/342/") 1 Криминальное чтиво
+                    a(href="https://www.kinopoisk.ru/film/725190/") 2 Одержимость
+                    a(href="https://www.kinopoisk.ru/film/760815/") 3 Стрингер
+        script(src='/scripts/scripts.js')
